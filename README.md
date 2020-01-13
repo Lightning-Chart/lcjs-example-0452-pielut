@@ -55,9 +55,9 @@ const chart = lightningChart()
 
 ## API Links
 
+* Lookup table: [LUT]
 * Pie chart: [PieChart]
 * Pie Slice label formatter: [SliceLabelFormatter]
-* Lookup table: [LUT]
 
 
 ## Support
