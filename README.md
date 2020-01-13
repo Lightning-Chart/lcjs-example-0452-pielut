@@ -55,9 +55,9 @@ const chart = lightningChart()
 
 ## API Links
 
-    * Pie chart: [PieChart]
-    * Pie Slice label formatter: [SliceLabelFormatter]
-    * Lookup table: [LUT]
+* Pie chart: [PieChart]
+* Pie Slice label formatter: [SliceLabelFormatter]
+* Lookup table: [LUT]
 
 
 ## Support
@@ -79,6 +79,7 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [4]: https://www.arction.com/support-services/
 
 © Arction Ltd 2009-2019. All rights reserved.
+
 
 [PieChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/piechart.html
 [SliceLabelFormatter]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#slicelabelformatter
