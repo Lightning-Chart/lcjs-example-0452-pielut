@@ -1,4 +1,6 @@
-# Pie Chart with LUT
+# Pie Chart with Lookup table
+
+![Pie Chart with Lookup table](pieLUT.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
@@ -13,6 +15,7 @@ The demo can be used as an example or a seed project. Local execution requires t
         npm start                # builds an application and starts the development server
 
 - The application is available at *http://localhost:8080* in your browser, webpack-dev-server provides hot reload functionality.
+
 
 ## Description
 
@@ -41,7 +44,6 @@ Create a Pie Chart and attach lookup table to fill the slices with colors based 
 // Create a new Pie Chart
 const chart = lightningChart()
     .Pie({ type: PieChartTypes.LabelsOnSides })
-    .setInnerRadius( 30 )
     .setAnimationsEnabled( true )
     .setMultipleSliceExplosion( true )
     .setLabelFormatter( SliceLabelFormatters.NamePlusValue )
@@ -55,9 +57,9 @@ const chart = lightningChart()
 
 ## API Links
 
-* Lookup table: [LUT]
 * Pie chart: [PieChart]
 * Pie Slice label formatter: [SliceLabelFormatter]
+* Lookup table: [LUT]
 
 
 ## Support
@@ -78,8 +80,10 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 [3]: https://stackoverflow.com/questions/tagged/lightningchart
 [4]: https://www.arction.com/support-services/
 
-© Arction Ltd 2009-2019. All rights reserved.
+© Arction Ltd 2009-2020. All rights reserved.
 
-[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/lut.html
+
 [PieChart]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/piechart.html
 [SliceLabelFormatter]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#slicelabelformatter
+[LUT]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/lut.html
+

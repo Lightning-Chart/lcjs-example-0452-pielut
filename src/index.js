@@ -32,7 +32,6 @@ const lut = new LUT( {
 const pie = lightningChart()
     .Pie( { type: PieChartTypes.LabelsOnSides } )
     .setTitle( 'Pie Chart' )
-    .setInnerRadius( 30 )
     .setAnimationsEnabled( true )
     .setMultipleSliceExplosion( true )
     .setLabelFormatter( SliceLabelFormatters.NamePlusValue )
@@ -56,6 +55,11 @@ pie
     .setOrigin( { x: -1, y: -1 } )
     .setMargin( { bottom: 5, left: 5 } )
     .add( pie )
+
+// 2 seconds after the example has loaded, change the values of each slice.
+setTimeout( () => {
+    slices.forEach( ( slice ) => slice.setValue( 1 + Math.random() * 120 ) )
+}, 2000)
 
 // Change value of every slice regularly
 setInterval( () => {
