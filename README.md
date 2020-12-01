@@ -83,7 +83,7 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[Pie chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/piechart.html
-[Pie Slice label formatter]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#slicelabelformatter
-[Lookup table]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/lut.html
+[Pie chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.1.0/classes/piechart.html
+[Pie Slice label formatter]: https://www.arction.com/lightningchart-js-api-documentation/v2.1.0/globals.html#slicelabelformatter
+[Lookup table]: https://www.arction.com/lightningchart-js-api-documentation/v2.1.0/classes/lut.html
 
