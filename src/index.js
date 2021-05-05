@@ -55,9 +55,6 @@ const slices = data.map((item) => pie.addSlice(item.name, item.value))
 // Add LegendBox
 pie
     .addLegendBox(LegendBoxBuilders.VerticalLegendBox)
-    .setPosition({ x: 0, y: 0 })
-    .setOrigin({ x: -1, y: -1 })
-    .setMargin({ bottom: 5, left: 5 })
     .add(pie)
 
 // 2 seconds after the example has loaded, change the values of each slice.
