@@ -1,6 +1,6 @@
-# Pie Chart with Lookup table
+# JavaScript Pie Chart with Lookup table
 
-![Pie Chart with Lookup table](pieLUT.png)
+![JavaScript Pie Chart with Lookup table](pieLUT.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
