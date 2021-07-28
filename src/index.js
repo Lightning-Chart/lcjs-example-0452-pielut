@@ -32,7 +32,7 @@ const lut = new LUT({
 // Create a Pie Chart
 const pie = lightningChart()
     .Pie({
-        // theme: Themes.dark 
+        // theme: Themes.darkGold 
         type: PieChartTypes.LabelsOnSides
     })
     .setTitle('Pie Chart')
@@ -55,6 +55,11 @@ const slices = data.map((item) => pie.addSlice(item.name, item.value))
 // Add LegendBox
 pie
     .addLegendBox(LegendBoxBuilders.VerticalLegendBox)
+    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
+    .setAutoDispose({
+        type: 'max-width',
+        maxWidth: 0.30,
+    })
     .add(pie)
 
 // 2 seconds after the example has loaded, change the values of each slice.
