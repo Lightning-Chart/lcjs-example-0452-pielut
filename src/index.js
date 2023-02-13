@@ -5,16 +5,7 @@
 const lcjs = require('@arction/lcjs')
 
 // Extract required parts from LightningChartJS.
-const {
-    PieChartTypes,
-    lightningChart,
-    LegendBoxBuilders,
-    SliceLabelFormatters,
-    SliceSorters,
-    LUT,
-    ColorRGBA,
-    Themes
-} = lcjs
+const { PieChartTypes, lightningChart, LegendBoxBuilders, SliceLabelFormatters, SliceSorters, LUT, ColorRGBA, Themes } = lcjs
 
 // Create a new color-value lookup table
 const lut = new LUT({
@@ -24,19 +15,18 @@ const lut = new LUT({
         { value: 60, color: ColorRGBA(255, 255, 65) },
         { value: 80, color: ColorRGBA(0, 128, 24) },
         { value: 100, color: ColorRGBA(0, 0, 249) },
-        { value: 120, color: ColorRGBA(134, 0, 125) }
+        { value: 120, color: ColorRGBA(134, 0, 125) },
     ],
-    interpolate: true
+    interpolate: true,
 })
 
 // Create a Pie Chart
 const pie = lightningChart()
     .Pie({
-        // theme: Themes.darkGold 
-        type: PieChartTypes.LabelsOnSides
+        // theme: Themes.darkGold
+        type: PieChartTypes.LabelsOnSides,
     })
     .setTitle('Pie Chart')
-    .setAnimationsEnabled(true)
     .setMultipleSliceExplosion(true)
     .setLabelFormatter(SliceLabelFormatters.NamePlusValue)
     .setSliceSorter(SliceSorters.None)
@@ -46,19 +36,17 @@ const pie = lightningChart()
 
 const data = []
 
-for (let i = 1; i <= 10; i++)
-    data.push({ name: `Slice #${i}`, value: 1 + Math.random() * 120 })
+for (let i = 1; i <= 10; i++) data.push({ name: `Slice #${i}`, value: 1 + Math.random() * 120 })
 
 // Create Slices
 const slices = data.map((item) => pie.addSlice(item.name, item.value))
 
 // Add LegendBox
-pie
-    .addLegendBox(LegendBoxBuilders.VerticalLegendBox)
+pie.addLegendBox(LegendBoxBuilders.VerticalLegendBox)
     // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
     .setAutoDispose({
         type: 'max-width',
-        maxWidth: 0.30,
+        maxWidth: 0.3,
     })
     .add(pie)
 
