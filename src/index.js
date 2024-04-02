@@ -23,7 +23,7 @@ const lut = new LUT({
 // Create a Pie Chart
 const pie = lightningChart()
     .Pie({
-        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined
+        theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
         type: PieChartTypes.LabelsOnSides,
     })
     .setTitle('Pie Chart')
