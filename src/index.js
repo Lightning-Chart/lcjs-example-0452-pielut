@@ -34,7 +34,6 @@ const pie = lightningChart({
     .setSliceSorter(SliceSorters.None)
     // Attach lookup table
     .setLUT(lut)
-    .setLabelConnectorGap(10)
 
 const data = []
 
