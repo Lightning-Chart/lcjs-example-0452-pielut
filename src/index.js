@@ -2,7 +2,7 @@
  * LightningChartJS example that showcases usage of color lookup table on Pie.
  */
 // Import LightningChartJS
-const lcjs = require('@arction/lcjs')
+const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
 const { PieChartTypes, lightningChart, LegendBoxBuilders, SliceLabelFormatters, SliceSorters, LUT, ColorRGBA, Themes } = lcjs
