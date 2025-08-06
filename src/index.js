@@ -5,7 +5,7 @@
 const lcjs = require('@lightningchart/lcjs')
 
 // Extract required parts from LightningChartJS.
-const { PieChartTypes, lightningChart, LegendBoxBuilders, SliceLabelFormatters, SliceSorters, LUT, ColorRGBA, Themes } = lcjs
+const { PieChartTypes, lightningChart, SliceLabelFormatters, SliceSorters, LUT, ColorRGBA, Themes } = lcjs
 
 // Create a new color-value lookup table
 const lut = new LUT({
@@ -41,15 +41,6 @@ for (let i = 1; i <= 10; i++) data.push({ name: `Slice #${i}`, value: 1 + Math.r
 
 // Create Slices
 const slices = data.map((item) => pie.addSlice(item.name, item.value))
-
-// Add LegendBox
-pie.addLegendBox(LegendBoxBuilders.VerticalLegendBox)
-    // Dispose example UI elements automatically if they take too much space. This is to avoid bad UI on mobile / etc. devices.
-    .setAutoDispose({
-        type: 'max-width',
-        maxWidth: 0.3,
-    })
-    .add(pie)
 
 // 2 seconds after the example has loaded, change the values of each slice.
 setTimeout(() => {
